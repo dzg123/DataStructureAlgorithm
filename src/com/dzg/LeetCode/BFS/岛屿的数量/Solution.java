@@ -1,6 +1,5 @@
-package com.dzg.BFS.岛屿的数量;
+package com.dzg.LeetCode.BFS.岛屿的数量;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Solution {
