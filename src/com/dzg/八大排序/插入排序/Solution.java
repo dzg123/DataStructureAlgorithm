@@ -1,4 +1,4 @@
-package com.dzg.七大排序.插入排序;
+package com.dzg.八大排序.插入排序;
 
 /**
  * @author shz

@@ -1,4 +1,4 @@
-package com.dzg.七大排序.快排;
+package com.dzg.八大排序.快排;
 
 /**
  * @author shz

@@ -1,4 +1,4 @@
-package com.dzg.七大排序.冒泡排序;
+package com.dzg.八大排序.冒泡排序;
 
 /**
  * @author shz
