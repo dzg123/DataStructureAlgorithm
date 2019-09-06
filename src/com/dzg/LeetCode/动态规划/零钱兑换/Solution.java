@@ -21,6 +21,7 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        solution.coinChange(new int[]{1, 2, 5}, 11);
+        int i = solution.coinChange(new int[]{1, 2, 50,500}, 1111);
+        System.out.println(i);
     }
 }
