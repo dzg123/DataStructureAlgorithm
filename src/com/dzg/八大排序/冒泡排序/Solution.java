@@ -8,16 +8,17 @@ package com.dzg.八大排序.冒泡排序;
 public class Solution {
     public void bubbleSort(int[] nums) {
         int len = nums.length;
+        boolean flag;
         for (int i = 0; i < len - 1; i++) {
-            boolean flag = false;
+             flag = false;
             for (int j = 0; j < len - i - 1; j++) {
                 if (nums[j] > nums[j + 1]) {
-//                    nums[j] = nums[j] + nums[j + 1];
-//                    nums[j + 1] = nums[j] - nums[j + 1];
-//                    nums[j] = nums[j] - nums[j + 1];
-                    nums[j] = nums[j] ^ nums[j + 1];
-                    nums[j + 1] = nums[j] ^ nums[j + 1];
-                    nums[j] = nums[j] ^ nums[j + 1];
+                    nums[j] = nums[j] + nums[j + 1];
+                    nums[j + 1] = nums[j] - nums[j + 1];
+                    nums[j] = nums[j] - nums[j + 1];
+//                    nums[j] = nums[j] ^ nums[j + 1];
+//                    nums[j + 1] = nums[j] ^ nums[j + 1];
+//                    nums[j] = nums[j] ^ nums[j + 1];
                     flag = true;
                 }
             }

@@ -33,10 +33,10 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] ints = {2, 3, 1, 5, 9, 7, 3};
-        new Solution().quickSort(ints, 0, 6);
+        int[] ints = {2, 3, 1, 5, 9, 7, 3,8};
+        new Solution().quickSort(ints, 0, 7);
         for (int anInt : ints) {
-            System.out.println(anInt);
+            System.out.print(anInt+" ");
 
         }
     }

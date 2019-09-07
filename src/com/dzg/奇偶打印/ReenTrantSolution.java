@@ -6,7 +6,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class ReenTrantSolution {
     private int start = 1;
     private volatile boolean flag = false;
-    private static final Lock lock = new ReentrantLock();
+    private static final Lock LOCK = new ReentrantLock();
 
     public static class oddThread implements Runnable {
         private ReenTrantSolution solution;
@@ -20,14 +20,14 @@ public class ReenTrantSolution {
 
             while (solution.start <= 1000) {
                 try {
-                    lock.lock();
+                    LOCK.lock();
                     if (!solution.flag) {
                         System.out.println(Thread.currentThread().getName()+":"+solution.start);
                         solution.start++;
                         solution.flag = true;
                     }
                 } finally {
-                    lock.unlock();
+                    LOCK.unlock();
                 }
 
 
@@ -46,14 +46,14 @@ public class ReenTrantSolution {
 
             while (solution.start <= 1000) {
                 try {
-                    lock.lock();
+                    LOCK.lock();
                     if (solution.flag) {
                         System.out.println(Thread.currentThread().getName()+":"+solution.start);
                         solution.start++;
                         solution.flag = false;
                     }
                 } finally {
-                    lock.unlock();
+                    LOCK.unlock();
                 }
 
 
