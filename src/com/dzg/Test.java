@@ -10,6 +10,8 @@ public class Test {
         System.out.println(length);
         int length2 = new String("字").getBytes("GBK").length;//GBK编码“字”占两个字节
         System.out.println(length2);
+        int a = 10 >> 1;
+        System.out.println(a);
 
     }
 }
